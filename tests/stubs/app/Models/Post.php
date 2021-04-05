@@ -11,10 +11,6 @@ class Post extends Model
 {
     use Sluggable;
 
-    public function slugConfigure(): Slug
-    {
-        return Slug::create()->slugForm('title');
-    }
 
     public function slugFrom(): string
     {
