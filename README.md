@@ -9,7 +9,7 @@ Addes sluggable trait to laravel models to genarate slugs for your titles
 
 
 * [Installation](#installation)
-* [How to use sluggable](#use)
+* [How to use sluggable](#usage)
 * [Testing](#testing)
 
 
@@ -21,25 +21,7 @@ You can install the package via composer:
 composer require designbycode/laravel-sluggable
 ```
 
-[comment]: <> (You can publish and run the migrations with:)
 
-[comment]: <> (You can publish the config file with:)
-
-[comment]: <> (```bash)
-
-[comment]: <> (php artisan vendor:publish --provider="Designbycode\Sluggable\SluggableServiceProvider" --tag="laravel-sluggable-config")
-
-[comment]: <> (```)
-
-[comment]: <> (This is the contents of the published config file:)
-
-[comment]: <> (```php)
-
-[comment]: <> (return [)
-
-[comment]: <> (];)
-
-[comment]: <> (```)
 
 ## Usage
 
