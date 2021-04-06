@@ -13,28 +13,36 @@ trait Sluggable
     abstract public function slugFrom(): string;
 
     /**
-     * Creating | Update | Saving watchers
+     * Handle creating | updating | saving
      */
     public static function bootSluggable()
     {
-        static::creating(callback: function (Model $model) {
+        static::creating(function (Model $model) {
+            $model->createSlug();
+        });
+
+        static::updating(function (Model $model) {
+            $model->createSlug();
+        });
+
+        static::saving(function (Model $model) {
             $model->createSlug();
         });
     }
 
     /**
-     * @return string
+     * @return mixed
      */
-    public function getSlugField(): string
+    protected function createSlug()
     {
-        return $this->getAttribute($this->slugFrom());
+        return $this->setAttribute('slug', Slugify::make($this->getSlugFromField()));
     }
 
     /**
      * @return mixed
      */
-    public function createSlug(): mixed
+    protected function getSlugFromField()
     {
-        return $this->setAttribute('slug', Slugify::make($this->getSlugField()));
+        return $this->getAttribute($this->slugFrom());
     }
 }
