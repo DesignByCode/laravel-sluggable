@@ -6,7 +6,6 @@
 [![Check & fix styling](https://github.com/DesignByCode/laravel-sluggable/actions/workflows/php-cs-fixer.yml/badge.svg)](https://github.com/DesignByCode/laravel-sluggable/actions/workflows/php-cs-fixer.yml)
 [![Psalm](https://github.com/DesignByCode/laravel-sluggable/actions/workflows/psalm.yml/badge.svg)](https://github.com/DesignByCode/laravel-sluggable/actions/workflows/psalm.yml)
 [![run-tests](https://github.com/DesignByCode/laravel-sluggable/actions/workflows/run-tests.yml/badge.svg)](https://github.com/DesignByCode/laravel-sluggable/actions/workflows/run-tests.yml)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/designbycode/laravel-sluggable/Check%20&%20fix%20styling?label=code%20style)](https://github.com/designbycode/laravel-sluggable/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amaster)
 [![Total Downloads](https://img.shields.io/packagist/dt/designbycode/laravel-sluggable.svg?style=plastic)](https://packagist.org/packages/designbycode/laravel-sluggable)
 
 Addes sluggable trait to laravel models to genarate slugs for your titles
